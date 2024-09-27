@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujtaba Haider - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Images/Site-Logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Mujtaba H.</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <!-- Three-line menu icon -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Header End -->
+     <!-- Main Start -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="/Images/Mujtaba-Wordpress.png " alt="Your Name" class="hero-image">
+                <h1>Hi, I'm <span id="typed-text"></span></h1>
+                <p>A Passionate WordPress Developer</p>
+                
+                <a href="#contact" class="cta-button">Hire Me</a>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <img src="/Images/Mujtaba-Wordpress.png" alt="About Me" class="about-image">
+                    <div class="about-text">
+                        <p>I'm a passionate WordPress developer with over 5 years of experience in creating beautiful, functional, and user-friendly websites. My expertise lies in WordPress, Elementor, and WooCommerce, allowing me to build everything from simple blogs to complex e-commerce platforms. I'm dedicated to staying up-to-date with the latest web technologies and best practices to deliver high-quality solutions that exceed client expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <div class="skill-progress" data-progress="90">
+                            <span class="skill-percent"></span>
+                        </div>
+                        <p>WordPress</p>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-progress" data-progress="92">
+                            <span class="skill-percent"></span>
+                        </div>
+                        <p>Elementor</p>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-progress" data-progress="80">
+                            <span class="skill-percent"></span>
+                        </div>
+                        <p>WooCommerce</p>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-progress" data-progress="95">
+                            <span class="skill-percent"></span>
+                        </div>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-progress" data-progress="90">
+                            <span class="skill-percent"></span>
+                        </div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-progress" data-progress="75">
+                            <span class="skill-percent"></span>
+                        </div>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">My Portfolio</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-button active" data-filter="all">All</button>
+                    <button class="filter-button" data-filter="wordpress">WordPress</button>
+                    <button class="filter-button" data-filter="ecommerce">E-Commerce</button>
+                    <button class="filter-button" data-filter="design">Design</button>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Dynamic Portfolio Items Will Be Rendered Here -->
+                </div>
+                     <p id="no-project-message" style="display: none; text-align: center; font-size: 18px; color: #666;">No Projects Found</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2023<span style="font-weight: 600; color: var(--secondary-color);"> Mujtaba Haider.</span> Let's Build Something Amazing Together.</p>
+        <button id="back-to-top" aria-label="Back to Top">↑</button>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
