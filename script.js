@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typing effect using the Typed.js library
     const typed = new Typed('#typed-text', {
-        strings: ['Mujtaba H.', 'a WP Developer', 'a Web Designer'],
+        strings: ['Mujtaba H.', 'a WP Developer', 'a Front-End Developer', 'a Web Designer'],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true
@@ -219,4 +219,49 @@ filterButtons.forEach(button => {
         // Show or hide "No Project Found" message based on the result
         noProjectMessage.style.display = (visibleItems === 0) ? 'block' : 'none';
     });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const loaderWrapper = document.getElementById('loader-wrapper');
+
+    function hideLoader() {
+        loaderWrapper.style.opacity = '0';
+        loaderWrapper.style.visibility = 'hidden';
+    }
+
+    function showLoader() {
+        loaderWrapper.style.opacity = '1';
+        loaderWrapper.style.visibility = 'visible';
+    }
+
+    // Hide loader when the page is loaded or after a maximum timeout
+    function handlePageLoad() {
+        setTimeout(() => {
+            hideLoader();
+        }, 500);
+    }
+
+    // Attempt to hide the loader on window load
+    window.addEventListener('load', handlePageLoad);
+
+    // Fallback: Hide the loader after a maximum time (e.g., 5 seconds)
+    setTimeout(hideLoader, 5000);
+
+    // Optional: Show loader when navigating to a new page
+    document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target.tagName === 'A' && target.href && !target.href.startsWith('#') && !target.href.startsWith('javascript:')) {
+            showLoader();
+        }
+    });
+
+    // Optional: Show loader when submitting a form
+    document.addEventListener('submit', (event) => {
+        showLoader();
+    });
+
+    // API to manually control the loader
+    window.loaderAPI = {
+        show: showLoader,
+        hide: hideLoader
+    };
 });
