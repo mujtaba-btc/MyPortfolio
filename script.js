@@ -162,14 +162,14 @@ const portfolioData = [
     },
     {
         category: 'ecommerce',
-        image: '/placeholder.svg?height=300&width=400',
+        image: '/Images/Screenshot (34).png',
         title: 'Project 2',
         description: 'E-Commerce Website',
         link: '#'
     },
     {
         category: '',
-        image: '/placeholder.svg?height=300&width=400',
+        image: '/Images/Screenshot (34).png',
         title: 'Project 3',
         description: 'Web Design',
         link: '#'
