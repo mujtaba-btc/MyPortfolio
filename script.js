@@ -220,3 +220,4 @@ filterButtons.forEach(button => {
         noProjectMessage.style.display = (visibleItems === 0) ? 'block' : 'none';
     });
 });
+
