@@ -834,8 +834,12 @@ footer {
 .testimonial-avatar {
     width: 64px;
     height: 64px;
-    border-radius: 50%;
-    margin-right: 16px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    margin-right: 16px; /* Adjusts space on the right */
+    display: flex;
+    align-items: center; /* Vertically centers the image */
+    justify-content: center; /* Horizontally centers the image */
 }
 
 .testimonial-name {
