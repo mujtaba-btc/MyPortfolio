@@ -153,26 +153,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Portfolio Data for Dynamic Rendering
 const portfolioData = [
-    {
-        category: 'wordpress',
-        image: '/Images/Screenshot (34).png',
-        title: 'NFT Website',
-        description: 'WordPress Website',
-        link: '#'
-    },
+    // {
+    //     category: 'wordpress',
+    //     image: '/Images/educatesindh.xyz.png',
+    //     title: 'NFT Website',
+    //     description: 'WordPress Website',
+    //     link: 'https://pev.art'
+    // },
     {
         category: 'ecommerce',
-        image: '/Images/Screenshot (34).png',
-        title: 'Project 2',
+        image: '/Images/ecomercesite.png',
+        title: 'Mobi Shop',
         description: 'E-Commerce Website',
-        link: '#'
+        link: 'https://localshop.free.nf'
     },
     {
-        category: '',
-        image: '/Images/Screenshot (34).png',
-        title: 'Project 3',
-        description: 'Web Design',
-        link: '#'
+        category: 'wordpress',
+        image: '/Images/educatesindh.xyz.png',
+        title: 'MCQ Website',
+        description: 'Mcq Website on WordPress',
+        link: 'https://boldmcqs.hub4info.com'
     }
 ];
 
@@ -187,7 +187,7 @@ function renderPortfolioItems(data) {
             <div class="portfolio-info">
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
-                <a href="${item.link}" class="portfolio-link">View Project</a>
+                <a href="${item.link}" target="_blank" class="portfolio-link">View Project</a>
             </div>
         </div>
     `).join('');
