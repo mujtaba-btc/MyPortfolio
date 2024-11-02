@@ -170,9 +170,9 @@ const portfolioData = [
     {
         category: 'wordpress',
         image: '/Images/educatesindh.xyz.png',
-        title: 'MCQ Website',
-        description: 'Mcq Website on WordPress',
-        link: 'https://boldmcqs.hub4info.com'
+        title: 'Institute Website',
+        description: 'WordPress Website',
+        link: 'https://educatesindh.xyz'
     }
 ];
 
